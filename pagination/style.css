@@ -1,0 +1,73 @@
+@import url('https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ab-pagination--nav,
+.ab-pagination--ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ab-pagination--ul {
+  list-style: none;
+  background-color: #e6e6ea;
+  margin: 0;
+  padding: 0 5px 0 5px;
+  border-radius: 20px;
+  color: #717173;
+}
+.ab-pagination--li {
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ab-pagination--a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.ab-pagination--button {
+  background-color: #e6e6ea;
+  color: #717173;
+  outline: 0;
+  font-size: 18px;
+  border: none;
+  margin: 0 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.is-current,
+.ab-pagination--button:active {
+  background-color: #61a1ea;
+  box-shadow: 0 3px 6px #82b3ec;
+  color: #fff;
+}
+
+.ab-pagination--button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  pointer-events: none;
+}
